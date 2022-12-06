@@ -4,10 +4,7 @@
 
 create user appadm identified by 'start123'; <br />
 
-sqlplus appadm/start123@//10.233.133.153:1521 <br />
-
-sqlplus appadm/start123@'(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.233.133.153)(PORT=1521))(CONNECT_DATA=(SID=tSKDB)(SERVER=DEDICATED)))' 
-<br />
+sqlplus appadm/start123@//10.233.133.153:1521/tSKDB <br />
 
 show user; <br />
 
@@ -59,11 +56,10 @@ To set password to never expire: <br />
 DB_SKOLENIE =  <br />
 (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.233.133.151)(PORT=1521))(CONNECT_DATA=(SID=SKOLENIE))) <br />
 
-
 DB_tSKDB = <br />
 (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.233.133.153)(PORT=1521))(CONNECT_DATA=(SID=tSKDB))) <br />
 
-
+sqlplus appadm@DB_tSKDB <br />
 
 
 ### 1. View the version of Oracle that is installed.
