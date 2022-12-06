@@ -20,10 +20,16 @@ insert_date date); <br />
 ### run script
 
 @/tmp/einstein.txt
+commit;
 
 ### select
 
-select * from einstein;
+select * from einstein; <br />
+
+set lines 160 <br />
+col PRIEZVISKO for a15 <br />
+col EMAIL for a25 <br />
+select * from einstein; <br />
 
 ### create backup table
 
@@ -31,13 +37,15 @@ create table einstein_bck as select * from einstein;
 
 ### insert new data
 
+INSERT INTO einstein VALUES (23570,'Fero','Lam',frantisek.lam@t-systems','+42158745692',sysdate);
 
 ### update table
 
+update einstein set name='Frantisek' where id=23570;
 
 ### delete from
 
-
+delete from einstein where id=23570;
 
 
 
