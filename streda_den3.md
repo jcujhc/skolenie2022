@@ -71,6 +71,10 @@ commit; <br />
 drop table einstein; <br />
 rollback; <br />
 
+select * from einstein; <br />
+
+desc einstein; <br />
+
 create table einstein as select * from einstein_bck; <br />
 
 create table einstein as select id,meno,priezvisko from einstein_bck; <br />
