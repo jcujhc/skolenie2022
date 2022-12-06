@@ -55,13 +55,25 @@ commit; <br />
 
 select * from einstein; <br />
 
-delete from einstein where id=23570; <br />
-commit; <br />
+delete from einstein; <br />
+rollback; <br />
 
+truncate table einstein; <br />
+rollback; <br />
+
+select * from einstein; <br />
 
 ### insert data back
 
-INSERT INTO einstein select * from einstein_bck;
+INSERT INTO einstein select * from einstein_bck; <br />
+commit; <br />
+
+drop table einstein; <br />
+rollback; <br />
+
+create table einstein as select * from einstein_bck; <br />
+
+create table einstein as select id,meno,priezvisko from einstein_bck; <br />
 
 
 
