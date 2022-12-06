@@ -27,8 +27,9 @@ commit;
 select * from einstein; <br />
 
 set lines 160 <br />
+col MENO for a15
 col PRIEZVISKO for a15 <br />
-col EMAIL for a30 <br />
+col EMAIL for a35 <br />
 select * from einstein; <br />
 
 ### create backup table
