@@ -73,7 +73,7 @@ rollback; <br />
 
 select * from einstein; <br />
 
-desc einstein; <br />
+desc einstein <br />
 
 create table einstein as select * from einstein_bck; <br />
 
