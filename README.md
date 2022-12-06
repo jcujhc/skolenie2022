@@ -4,8 +4,6 @@
 
 create user appadm identified by 'start123'; <br />
 
-grant create session to appadm; <br />
-
 sqlplus appadm/start123@//10.233.133.153:1521 <br />
 
 sqlplus appadm/start123@'(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.233.133.153:1521)(PORT=1521))(CONNECT_DATA=(SID=tSKDB)(SERVER=DEDICATED)))' 
@@ -13,6 +11,7 @@ sqlplus appadm/start123@'(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST
 
 show user; <br />
 
+grant create session to appadm; <br />
 grant create table to appadm; <br />
 alter user appadm quota 100M on USERS;
 
