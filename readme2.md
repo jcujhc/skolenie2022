@@ -54,9 +54,9 @@ truncate table zamestnanci; <br />
 
 # EXPDP / IMPDP
 
-mkdir /u02/data/export
-create or replace directory DPDIR as '/u02/data/export';
-grant read,write on DPDIR to appadm;
+mkdir /u02/data/export <br />
+create or replace directory DPDIR as '/u02/data/export'; <br />
+grant read,write on DPDIR to appadm; <br />
 
 ### EXPDP
 $ expdp appadm/start123 schemas=appadm directory=DPDIR dumpfile=export_appadm.dmp <br />
