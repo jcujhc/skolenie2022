@@ -85,8 +85,11 @@ create table einstein as select * from einstein_bck; <br />
 
 create table einstein as select id,meno,priezvisko from einstein_bck; <br />
 
+### edit
 
+alter table einstein add (plat number); <br />
 
+update einstein set plat=10000 where id=XXXX; <br />
 
 
 
