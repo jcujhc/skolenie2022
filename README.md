@@ -2,8 +2,8 @@
 
 ## connection
 
-create user appadm identified by 'start123';
-grant create session to appadm;
+create user appadm identified by 'start123'
+grant create session to appadm
 
 sqlplus appadm/start123@//10.233.133.153:1521
 
