@@ -7,6 +7,10 @@ su - oracle <br />
 
 sqlplus userXX/start123@//10.233.133.153:1521/tSKDB <br />
 
+vyskusat <br />
+sqlplus userXX/start123@DB_tSKDB <br />
+
+
 ### create table
 
 create table einstein( <br />
