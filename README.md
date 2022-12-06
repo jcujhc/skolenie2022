@@ -54,6 +54,15 @@ To set password to never expire:
 ## 10. View all user privileges including the privileges that are indirectly granted through roles
    SELECT * FROM DBA_SYS_PRIVS WHERE GRANTEE='USERNAME' or GRANTEE in (SELECT GRANTED_ROLE FROM DBA_ROLE_PRIVS WHERE GRANTEE='USERNAME');
 
+# TNSNAMES.ORA   
+DB_SKOLENIE =  <br />
+(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.233.133.155)(PORT=1521))(CONNECT_DATA=(SID=SKOLENIE))) <br />
+
+
+DB_tSKDB = <br />
+(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.233.133.153)(PORT=1521))(CONNECT_DATA=(SID= tSKDB))) <br />
+
+
 
 
 ### 1. View the version of Oracle that is installed.
