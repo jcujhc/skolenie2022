@@ -13,35 +13,35 @@ sqlplus appadm/start123@'(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST
 
 show user; <br />
 
-grant create table to appadm;
+grant create table to appadm; <br />
 alter user appadm quota 100M on USERS;
 
 ### 1. View the version of Oracle that is installed.
-   SELECT * FROM PRODUCT_COMPONENT_VERSION;
-    - or -
-   SELECT * FROM V$VERSION;
+   SELECT * FROM PRODUCT_COMPONENT_VERSION; <br />
+    - or - <br />
+   SELECT * FROM V$VERSION; <br />
    
 ### 2. View database name.
-   SELECT NAME FROM V$DATABASE;
-    - or -
-   SELECT * FROM GLOBAL_NAME;
+   SELECT NAME FROM V$DATABASE; <br />
+    - or - <br />
+   SELECT * FROM GLOBAL_NAME; <br />
 ### 3. View NLS (National Language Support) Parameters
-   SELECT * FROM NLS_DATABASE_PARAMETERS;
-    - or -
-   SELECT * FROM V$NLS_PARAMETERS;
+   SELECT * FROM NLS_DATABASE_PARAMETERS; <br />
+    - or - <br />
+   SELECT * FROM V$NLS_PARAMETERS; <br />
    
 ### 4. View Sessions
-   SELECT SCHEMANAME, OSUSER, MACHINE, PROGRAM, STATE FROM V$SESSION;
+   SELECT SCHEMANAME, OSUSER, MACHINE, PROGRAM, STATE FROM V$SESSION; <br />
    
 ### 5. View Services
-   SELECT SERVICE_ID, NAME, NETWORK_NAME FROM DBA_SERVICES;
+   SELECT SERVICE_ID, NAME, NETWORK_NAME FROM DBA_SERVICES; <br />
    
 ### 6. View current database instance details
-   SELECT INSTANCE_NAME, HOST_NAME, VERSION, STARTUP_TIME, STATUS FROM V$INSTANCE;
+   SELECT INSTANCE_NAME, HOST_NAME, VERSION, STARTUP_TIME, STATUS FROM V$INSTANCE; <br />
 
 ## Managing Tablespaces and Data files
 ### 1. List tablespaces, status and type
-   SELECT TABLESPACE_NAME, STATUS, CONTENTS FROM DBA_TABLESPACES;
+   SELECT TABLESPACE_NAME, STATUS, CONTENTS FROM DBA_TABLESPACES; <br />
    
 ### 2. Create tablespace
    CREATE TABLESPACE myspace 
