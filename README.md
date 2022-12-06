@@ -4,7 +4,7 @@ LALA
 
 ## connection
 
-create user appadm identified by 'start123'; <br />
+create user appadm identified by "start123"; <br />
 
 sqlplus appadm/start123@//10.233.133.153:1521/tSKDB <br />
 
