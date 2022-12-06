@@ -12,7 +12,7 @@ CREATE TABLE oddelenia ( dept_id int NOT NULL, dept_name char(50) NOT NULL, dept
 INSERT INTO oddelenia (dept_id, dept_name, dept_headof) VALUES (4567, 'GSO SAP 5','Verner, Igor'); <br />
 INSERT INTO oddelenia (dept_id, dept_name, dept_headof) VALUES (1267, 'TSO AM 4','Lycka-Kubalakova, Marcela'); <br />
 INSERT INTO oddelenia VALUES (7659, 'LIM','Kasper, Kornelis'); <br />
-INSERT INTO oddelenia (dept_id, dept_name) VALUES (9217, 'EMEA GBO & LIM','Tokarova, Andrea'); <br />
+INSERT INTO oddelenia (dept_id, dept_name) VALUES (9217, 'EMEA GBO and LIM','Tokarova, Andrea'); <br />
 
 select * from oddelenia; <br />
 
