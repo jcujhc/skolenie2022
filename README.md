@@ -6,7 +6,7 @@ create user appadm identified by 'start123'; <br />
 
 sqlplus appadm/start123@//10.233.133.153:1521 <br />
 
-sqlplus appadm/start123@'(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.233.133.153:1521)(PORT=1521))(CONNECT_DATA=(SID=tSKDB)(SERVER=DEDICATED)))' 
+sqlplus appadm/start123@'(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.233.133.153)(PORT=1521))(CONNECT_DATA=(SID=tSKDB)(SERVER=DEDICATED)))' 
 <br />
 
 show user; <br />
