@@ -52,39 +52,3 @@ truncate table zamestnanci; <br />
 
 
 
-# EXPDP / IMPDP
-
-mkdir /u02/data/export <br />
-create or replace directory DPDIR as '/u02/data/export'; <br />
-grant read,write on DPDIR to appadm; <br />
-
-### EXPDP
-$ expdp appadm/start123 schemas=appadm directory=DPDIR dumpfile=export_appadm.dmp <br />
-
-### IMPDP
-$ impdp appadm/start123@SKOLENIE schemas=appadm directory=DPDIR dumpfile=export.dmp <br />
-
-
-### EXPDP/IMPDP použitím par file
-file: mojexport.par v
-USERID=student01/start123 <br />
-DIRECTORY=DPDIR <br />
-DUMPFILE=expdp_db.30072019.dmp <br />
-LOGFILE=expdp_db.30072019.log <br />
-SCHEMAS=student1 <br />
-
--- or TABLES=EMPLOYEES, DEPARTMENTS <br />
-
-$ expdp parfile=mojexport.par <br />
-
-
-### MOŽNOSTI IMPDP
-
-table_exists_action je použitá pri impdp keď tabuľka už existuje v DB  <br />
-                 
-table_exists_action=skip:  ignoruj data v import file a nechaj existujúcu tabuľku nedotknutú. Toto je default option a neplatí pri nastavení  content=data_only. <br />
-
-table_exists_action=append:  týmto sa povie, pridaj exportované dá do existujúcej tabuľky, nechaj exist. riadny a pridaj nové. <br />
-
-table_exists_action=truncate:  toto nám vraví, truncate existujúcu tabuľku, ponechaj štruktúru a importni riadky z dump file. Pri použití tejto option nesmie existovat  referenčné integrita (constraints) na cieľovej tabuľke.  <br />
-
