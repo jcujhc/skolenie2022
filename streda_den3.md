@@ -38,7 +38,7 @@ create table einstein_bck as select * from einstein;
 
 ### insert new data
 
-INSERT INTO einstein VALUES (23570,'Fero','Lam',frantisek.lam@t-systems','+42158745692',sysdate);
+INSERT INTO einstein VALUES (23570,'Fero','Lam','frantisek.lam@t-systems','+42158745692',sysdate);
 
 ### update table
 
