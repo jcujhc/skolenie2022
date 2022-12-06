@@ -17,6 +17,8 @@ email varchar2(40), <br />
 telefon varchar2(30), <br />
 insert_date date); <br />
 
+select table_name from user_tables; <br />
+
 ### run script
 
 @/tmp/einstein.txt <br />
