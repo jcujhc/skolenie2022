@@ -1,14 +1,15 @@
 # skolenie2022
 
-1. View the version of Oracle that is installed.
+## 1. View the version of Oracle that is installed.
    SELECT * FROM PRODUCT_COMPONENT_VERSION;
     - or -
    SELECT * FROM V$VERSION;
-2. View database name.
+   
+## 2. View database name.
    SELECT NAME FROM V$DATABASE;
     - or -
    SELECT * FROM GLOBAL_NAME;
-3. View NLS (National Language Support) Parameters
+## 3. View NLS (National Language Support) Parameters
    SELECT * FROM NLS_DATABASE_PARAMETERS;
     - or -
    SELECT * FROM V$NLS_PARAMETERS;
