@@ -19,8 +19,8 @@ insert_date date); <br />
 
 ### run script
 
-@/tmp/einstein.txt
-commit;
+@/tmp/einstein.txt <br />
+commit; 
 
 ### select
 
@@ -28,7 +28,7 @@ select * from einstein; <br />
 
 set lines 160 <br />
 col PRIEZVISKO for a15 <br />
-col EMAIL for a25 <br />
+col EMAIL for a30 <br />
 select * from einstein; <br />
 
 ### create backup table
