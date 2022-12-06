@@ -6,6 +6,15 @@ create tablespace MOJTABLESPACE datafile '/u02/data/SKOLENIE/mojtablespace01.dbf
 
 create user dbadm identified by start123 default tablespace MOJTABLESPACE; <br />
 
+grant create session to dbadm; <br />
+grant create table to dbadm; <br />
+exit
+
+sqlplus dbadm@DB_SKOLENIE;
+
+CREATE TABLE oddelenia ( dept_id int NOT NULL, dept_name char(50) NOT NULL, dept_headof char(50) NOT NULL, CONSTRAINT departments_pk PRIMARY KEY (dept_id) ); <br />
+
+alter user dbadm quota 100M on MOJTABLESPACE; <br />
 
 CREATE TABLE oddelenia ( dept_id int NOT NULL, dept_name char(50) NOT NULL, dept_headof char(50) NOT NULL, CONSTRAINT departments_pk PRIMARY KEY (dept_id) ); <br />
 
