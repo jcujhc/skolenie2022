@@ -5,5 +5,16 @@ create tablespace MOJTABLESPACE datafile '/u02/data/tSKDB/mojtablespace01.dbf' s
 create user dbadm identified by start123 default tablespace MOJTABLESPACE; <br />
 
 
+CREATE TABLE oddelenia ( dept_id int NOT NULL, dept_name char(50) NOT NULL, dept_headof char(50) NOT NULL, CONSTRAINT departments_pk PRIMARY KEY (dept_id) ); <br />
 
+INSERT INTO oddelenia (dept_id, dept_name, dept_headof) VALUES (4567, 'GSO SAP 5','Verner, Igor'); <br />
+INSERT INTO oddelenia (dept_id, dept_name, dept_headof) VALUES (1267, 'TSO AM 4','Lycka-Kubalakova, Marcela'); <br />
+INSERT INTO oddelenia VALUES (7659, 'LIM','Kasper, Kornelis'); <br />
+INSERT INTO oddelenia (dept_id, dept_name) VALUES (9217, 'EMEA GBO & LIM','Tokarova, Andrea'); <br />
+
+select * from oddelenia; <br />
+
+select dept_id,last_name,first_name from zamestnanci where last_name = '%ova'; <br />
+
+select LAST_NAME,FIRST_NAME,SALARY from zamestnanci order by SALARY; <br />
 
