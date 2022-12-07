@@ -3,6 +3,8 @@
 
 sqlplus / as sysdba <br />
 
+create table t1 as select * from all_tables; <br />
+
 create user aplikac identified by start123 default tablespace MOJTABLESPACE; <br />
 grant create session to aplikac;  <br />
 grant create table to aplikac;  <br /> 
