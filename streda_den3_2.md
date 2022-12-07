@@ -52,12 +52,12 @@ exit; <br />
 AS ORACLE <br />
 mkdir /u02/data/export <br />
 
-sqplus / as sysdba <br />
+sqlplus / as sysdba <br />
 -- resp <br />
 sqlplus /nolog  <br />
 conn sys as sysdba <br />
 create or replace directory DPDIR as '/u02/data/export'; <br />
-grant read,write on DPDIR to appadm; <br />
+grant read,write on directory  DPDIR to appadm; <br />
 
 ## EXPDP
 $ expdp aplikac/start123@DB_SKOLENIE schemas=aplikac directory=DPDIR dumpfile=export_aplikac.dmp <br />
