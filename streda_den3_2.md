@@ -68,6 +68,8 @@ grant read,write on directory  DPDIR to aplikac; <br />
 ## EXPDP
 $ expdp aplikac/start123@DB_SKOLENIE schemas=aplikac directory=DPDIR dumpfile=export_aplikac.dmp <br />
 
+$ expdp aplikac/start123@DB_tSKDB tables=aplikac.zamestnanci directory=DPDIR dumpfile=export_aplikac_zamestnanci.dmp <br />
+
 ## IMPDP
 $ impdp aplikac/start123@DB_SKOLENIE schemas=aplikac directory=DPDIR dumpfile=export_aplikac.dmp <br />
 
