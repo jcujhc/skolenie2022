@@ -28,6 +28,8 @@ select username, account_status, created from dba_users where username like 'A%'
 
 alter user APLIKAC account lock;  <br />
 
+conn APLIKAC/start123 <br />
+
 select username, account_status, created, default_tablespace from dba_users where username = 'APLIKAC'; <br />
 
 alter user APLIKAC account unlock;  <br />
