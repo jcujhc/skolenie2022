@@ -30,6 +30,9 @@ alter user APLIKAC account lock;  <br />
 
 conn APLIKAC/start123 <br />
 
+conn sys as sysdba -- opyta password <br />
+Enter password: <br />
+
 select username, account_status, created, default_tablespace from dba_users where username = 'APLIKAC'; <br />
 
 alter user APLIKAC account unlock;  <br />
