@@ -50,6 +50,10 @@ spool off; <br />
 
 ## check size of table
 
+conn sys as sysdba   -- opyta password <br />
+Enter password: <br />
+
+
 select segment_name,segment_type, sum(bytes/1024/1024) MB <br />
  from dba_segments <br />
  where segment_name='&Your_Table_Name'  <br />
