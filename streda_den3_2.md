@@ -11,7 +11,13 @@ select USERNAME, SID, SERIAL#, PROGRAM, LOGON_TIME from v$session;  <br />
 
 select USERNAME, SID, SERIAL#, PROGRAM, LOGON_TIME from v$session where USERNAME is not null;  <br />
 
-## SESSION1
+
+# DEMO EXPORT
+
+## SESSION applikac
+
+sqlplus aplikac/start123@DB_SKOLENIE <br />
+
 CREATE TABLE oddelenia <br />
 ( dept_id int NOT NULL, <br />
   dept_name varchar2(50) NOT NULL, <br />
