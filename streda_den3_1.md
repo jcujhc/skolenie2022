@@ -18,7 +18,7 @@ set lines 160 <br />
 col USERNAME for a10 <br />
 select username, account_status, created from dba_users where username = 'APLIKAC'; <br />
 
-select username, account_status, created from dba_users where username = 'APLIKAC'; <br />
+select username, account_status, created from dba_users where username like 'A%'; <br />
 
 alter user APLIKAC account lock;  <br />
 
