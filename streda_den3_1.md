@@ -3,6 +3,8 @@
 
 sqlplus / as sysdba <br />
 
+select name from v$database;  <br />
+
 create table t1 as select * from all_tables; <br />
 
 create user aplikac identified by start123 default tablespace MOJTABLESPACE; <br />
