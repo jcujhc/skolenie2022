@@ -12,6 +12,10 @@ alter user aplikac quota 100M on MOJTABLESPACE;  <br />
 
 select file_name, bytes/1024/1024 MB from dba_data_files; <br />
 
+set lines 160 <br />
+col FILE_NAME for a40 <br />
+SELECT FILE_NAME, TABLESPACE_NAME, STATUS FROM DBA_DATA_FILES; <br />
+
 select username, account_status, created from dba_users where username = 'aplikac'; <br />
 
 set lines 160 <br />
@@ -36,11 +40,12 @@ insert into dev1_t1 values (4,'Lala'); <br />
 insert into dev1_t1 values (5,'Lala'); <br />
 commit; <br />
 
-select * from dev1_t1 ; <br />
 
-set lines 160 <br />
-col FILE_NAME for a40 <br />
-SELECT FILE_NAME, TABLESPACE_NAME, STATUS FROM DBA_DATA_FILES; <br />
+spool /tmp/log.txt  <br />
+select * from dev1_t1 ; <br />
+spool off; <br />
+
+!cat /tmp/log.txt <br />
 
 
 ## check size of table
