@@ -61,7 +61,7 @@ select segment_name,segment_type, sum(bytes/1024/1024) MB <br />
  where segment_name='&Your_Table_Name'  <br />
 group by segment_name,segment_type;  <br />
 
-Enter value for your_table_name:   -- zadat DEV1_T1  <br />
+Enter value for your_table_name:   -- zadat DEV1_T1 alebo T1  <br />
 
 ## check size tablespace
 
