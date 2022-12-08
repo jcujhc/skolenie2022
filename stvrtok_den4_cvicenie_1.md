@@ -5,7 +5,7 @@ sudo su - <br />
 
 su - oracle <br />
 
-skopirovat z hlavneho PC subor /tmp/load_sample.sql <br />
+skopirovat z hlavneho PC subor /tmp/load_sample.sql ..... (user na hlavnom pc je: einsteinteacher, IP: 10.233.133.153 <br />
 
 nahlasit sa do svojej databazy SKOLENIE pod userom aplikac <br />
  
