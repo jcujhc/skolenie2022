@@ -54,4 +54,7 @@ expdp "'/ as sysdba'" schemas=testuser directory=DPDIR dumpfile=export_2testuser
 
 impdp "'/ as sysdba'" schemas=testuser directory=DPDIR dumpfile=export_2testuser.dmp <br />
 
+impdp "'/ as sysdba'" schemas=testuser directory=DPDIR dumpfile=export_2testuser.dmp TABLE_EXISTS_ACTION=replace REMAP_SCHEMA=TESTUSER:TESTUSER_NEW
+
+
 
