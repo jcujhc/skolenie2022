@@ -1,5 +1,5 @@
 
-### cvicenie 1
+## cvicenie 1
 
 sudo su - <br />
 
@@ -17,3 +17,9 @@ opat vyselektovat table_name z view user_tables <br />
 
 urobit export schemy applikac <br />
 
+
+
+## bonus: <br />
+vypnut/stop vas listener (LISTENER_SKOLENIE) <br />
+zmenit IP vasho listenera v nejakom config file v $ORACLE_HOME/.../... <br />
+start vas listener <br />
