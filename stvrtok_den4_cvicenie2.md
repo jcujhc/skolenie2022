@@ -35,11 +35,11 @@ INSERT INTO oddelenia (dept_id, dept_name, dept_headof) VALUES (1267, 'TSO AM 4'
 INSERT INTO oddelenia (dept_id, dept_name, dept_headof) VALUES (7659, 'LIM','Kasper, Kornelis'); <br />
 INSERT INTO oddelenia (dept_id, dept_name, dept_headof) VALUES (9217, 'EMEA GBOLIM','Tokarova, Andrea'); <br />
 
-INSERT INTO zamestnanci (emp_number, last_name, first_name, salary, dept_id) VALUES (460061, 'Molnar', 'Ivan', 700, 4567);
-INSERT INTO zamestnanci (emp_number, last_name, first_name, salary, dept_id) VALUES (329099, 'Molnar', 'Jozef', 820, 7659);
-INSERT INTO zamestnanci (emp_number, last_name, first_name, salary, dept_id) VALUES (534001, 'Beck', 'Samoel', 900, 9217);
-INSERT INTO zamestnanci (emp_number, last_name, first_name, salary, dept_id) VALUES (261942, 'Liba', 'Daniel', 650, 9217);
-INSERT INTO zamestnanci (emp_number, last_name, first_name, salary, dept_id) VALUES (209818, 'Vancakova', 'Ivana', 1200, 1267);
+INSERT INTO zamestnanci (emp_number, last_name, first_name, salary, dept_id) VALUES (460061, 'Molnar', 'Ivan', 700, 4567); <br />
+INSERT INTO zamestnanci (emp_number, last_name, first_name, salary, dept_id) VALUES (329099, 'Molnar', 'Jozef', 820, 7659); <br />
+INSERT INTO zamestnanci (emp_number, last_name, first_name, salary, dept_id) VALUES (534001, 'Beck', 'Samoel', 900, 9217); <br />
+INSERT INTO zamestnanci (emp_number, last_name, first_name, salary, dept_id) VALUES (261942, 'Liba', 'Daniel', 650, 9217); <br />
+INSERT INTO zamestnanci (emp_number, last_name, first_name, salary, dept_id) VALUES (209818, 'Vancakova', 'Ivana', 1200, 1267); <br />
 
 commit; <br />
 
