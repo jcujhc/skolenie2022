@@ -48,7 +48,7 @@ exit; <br />
 ### EXPORT DAT
 
 expdp "'/ as sysdba'" schemas=testuser directory=DPDIR dumpfile=export_2testuser.dmp <br />
-fsd
+
 
 ### IMPORT DAT
 
